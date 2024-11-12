@@ -1,5 +1,5 @@
 <template>
-  <div class="flex content-center justify-center h-screen flex-wrap">
-    <Button>Click me</Button>
+  <div class="flex gap-4 p-4 h-screen overflow-hidden">
+    <Sidebar></Sidebar>
   </div>
 </template>

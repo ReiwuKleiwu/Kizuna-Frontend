@@ -1,5 +1,5 @@
 <template>
-  <nav :class="['flex flex-col bg-card gap-4']">
+  <nav :class="['flex flex-col gap-4']">
     <div
       :class="[
         'flex-1 text-card-foreground flex flex-col overflow-hidden text-nowrap transition-all duration-300 ease-in-out rounded-lg border border-bg-border border-solid bg-card',

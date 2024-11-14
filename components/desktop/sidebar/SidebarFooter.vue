@@ -13,9 +13,9 @@
       <TooltipProvider :delayDuration="100">
         <Tooltip>
           <TooltipTrigger asChild>
-            <div class="rounded-lg flex p-2 hover:bg-accent">
+            <NuxtLink to="/profile-settings" class="rounded-lg flex p-2 hover:bg-accent">
               <Icon name="lucide:settings" class="shrink-0" />
-            </div>
+            </NuxtLink>
           </TooltipTrigger>
           <TooltipContent v-if="!isCollapsed" :sideOffset="4">
             <p>Profile Settings</p>

@@ -3,10 +3,14 @@
     <li>
       <Tooltip>
         <TooltipTrigger asChild>
-          <a class="rounded-lg p-4 no-underline flex items-center gap-5 hover:bg-accent">
+          <NuxtLink
+            class="rounded-lg p-4 no-underline flex items-center gap-6 hover:bg-accent"
+            :to="to"
+            :class="{ 'bg-accent': isActive }"
+          >
             <Icon :name="iconName" class="shrink-0" />
             <span class="grow">{{ label }}</span>
-          </a>
+          </NuxtLink>
         </TooltipTrigger>
         <TooltipContent v-if="isCollapsed" side="right" :sideOffset="8">
           <p>{{ label }}</p>
@@ -18,13 +22,18 @@
 
 <script setup lang="ts">
   import { defineProps } from 'vue';
+  import { useRoute } from 'vue-router';
 
+  const route = useRoute();
   const props = defineProps({
     iconName: {
       type: String,
       required: true,
     },
     label: String,
+    to: String,
     isCollapsed: Boolean,
   });
+
+  const isActive = computed(() => route.path === props.to);
 </script>

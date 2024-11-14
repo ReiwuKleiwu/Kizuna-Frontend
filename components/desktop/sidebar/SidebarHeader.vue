@@ -7,7 +7,7 @@
         '-translate-x-full opacity-0': isCollapsed,
       }"
     >
-      KIZUNA | 絆
+      KIIZUNA | 絆
     </span>
     <button @:click="toggleSidebar" class="flex p-4 border-none rounded-lg bg-none cursor-pointer hover:bg-accent">
       <Icon name="lucide:chevrons-left" :class="['transition-transform duration-300', { 'rotate-180': isCollapsed }]" />

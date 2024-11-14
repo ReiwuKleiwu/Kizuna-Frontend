@@ -6,7 +6,7 @@
         { 'w-[66px] p-1': isCollapsed, 'w-64 py-1 px-2': !isCollapsed },
       ]"
     >
-      <ul class="list-none flex flex-col">
+      <ul class="list-none flex flex-col gap-2">
         <SidebarHeader :isCollapsed="isCollapsed" :toggleSidebar="toggleSidebar" />
         <div class="bg-border h-[1px] my-1"></div>
         <SidebarNavItem
@@ -14,6 +14,7 @@
           :key="item.label"
           :iconName="item.icon"
           :label="item.label"
+          :to="item.to"
           :isCollapsed="isCollapsed"
         />
       </ul>
@@ -24,9 +25,6 @@
 
 <script setup lang="ts">
   import { ref } from 'vue';
-  import SidebarHeader from './SidebarHeader.vue';
-  import SidebarNavItem from './SidebarNavItem.vue';
-  import SidebarFooter from './SidebarFooter.vue';
 
   const isCollapsed = ref(true);
   const toggleSidebar = () => {
@@ -39,8 +37,9 @@
   });
 
   const navItems = [
-    { label: 'Explore Chats', icon: 'lucide:messages-square' },
-    { label: 'Friends', icon: 'lucide:users-round' },
-    { label: 'Room Settings', icon: 'lucide:settings-2' },
+    { label: 'Explore Chats', icon: 'lucide:messages-square', to: '/explore' },
+    { label: 'Friends', icon: 'lucide:users-round', to: '/friends' },
+    { label: 'Active Chat', icon: 'lucide:message-square', to: '/chat' },
+    { label: 'Room Settings', icon: 'lucide:settings-2', to: '/settings' },
   ];
 </script>

@@ -21,7 +21,8 @@
     "tailwind-merge": "^2.5.4",
     "tailwindcss-animate": "^1.0.7",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue3-perfect-scrollbar": "^2.0.0"
   },
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.14",

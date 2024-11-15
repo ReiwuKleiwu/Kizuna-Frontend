@@ -1,12 +1,16 @@
 <template>
   <div
-    class="text-card-foreground relative grid grid-cols-[80px_1fr] w-auto p-2 mt-6 rounded-lg hover:bg-background group"
+    class="text-card-foreground relative grid grid-cols-[80px_1fr] w-auto p-2 mt-6 mr-4 rounded-lg hover:bg-background group"
   >
-    <img src="/public/images/profile_pic_1.jpg" class="w-16 h-auto rounded-lg" />
+    <img src="/public/images/profile_pic_1.jpg" class="w-12 h-auto rounded-lg justify-self-center self-start mt-1" />
     <div>
-      <div class="grid grid-cols-[auto_1fr] gap-4">
-        <span class="font-bold">User</span>
-        <span>Today at 17:08 Uhr</span>
+      <div class="flex gap-4 items-center">
+        <div>
+          <span class="text-card-foreground-highlight font-bold">Username</span>
+        </div>
+        <div>
+          <span class="text-muted-foreground text-xs">Today at 17:08 Uhr</span>
+        </div>
       </div>
       <div class="pr-24">
         <span>

@@ -5,8 +5,14 @@
       <TooltipProvider :delayDuration="100">
         <Tooltip>
           <TooltipTrigger asChild>
-            <NuxtLink class="rounded-lg p-2 no-underline flex items-center gap-6 hover:bg-accent" to="/room-settings">
-              <Icon name="lucide:settings-2" class="shrink-0" />
+            <NuxtLink
+              class="rounded-lg p-2 no-underline flex items-center gap-6 hover:bg-accent group"
+              to="/room-settings"
+            >
+              <Icon
+                name="lucide:settings-2"
+                class="text-card-foreground shrink-0 group-hover:text-card-foreground-highlight"
+              />
             </NuxtLink>
           </TooltipTrigger>
           <TooltipContent side="bottom" :sideOffset="8">

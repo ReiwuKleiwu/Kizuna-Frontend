@@ -49,7 +49,9 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        /* Custom colors */
         'textarea-background': 'hsl(var(--textarea-background))',
+        'card-foreground-highlight': 'hsl(var(--card-foreground-highlight))',
       },
       borderRadius: {
         xl: 'calc(var(--radius) + 4px)',

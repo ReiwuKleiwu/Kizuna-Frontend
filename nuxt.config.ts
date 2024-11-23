@@ -14,7 +14,6 @@ export default defineNuxtConfig({
         'shadcn-nuxt',
         '@nuxtjs/color-mode',
         '@nuxt/icon',
-        'vue3-perfect-scrollbar/nuxt',
         '@nuxt/eslint',
     ],
     colorMode: {

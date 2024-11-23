@@ -1,19 +1,37 @@
 <template>
     <aside
-        class="bg-card flex flex-col w-72 rounded-lg border border-solid border-bg-border"
+        class="bg-card flex flex-col w-72 rounded-lg border border-solid border-bg-border text-card-foreground"
     >
-        <div class="relative">
-            <img
-                class="w-full aspect-video rounded-t-lg border-solid border-bg-border"
-                src="/public/images/room_wallpaper.png"
-            />
-            <div class="fade-overlay" aria-hidden="true" />
-        </div>
+        <ChatUsersListHeader />
         <div
             id="users-scroller"
             class="overflow-x-hidden overflow-y-scroll flex-1 my-2 mr-1"
         >
             <div class="flex flex-col min-h-full relative px-2">
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
+                <ChatUser />
                 <ChatUser />
                 <ChatUser />
                 <ChatUser />
@@ -63,4 +81,6 @@
 }
 </style>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ChatUsersListHeader from '~/components/desktop/chat/ChatUsersListHeader.vue';
+</script>

@@ -69,14 +69,14 @@
     background: hsl(var(--background));
 }
 ::-webkit-scrollbar-thumb {
-    background: hsl(var(--primary));
+    background: hsl(var(--accent));
     border-radius: 30px;
     max-height: 10rem;
 }
 /* Non-WebKit browsers */
 @supports not selector(::-webkit-scrollbar) {
     * {
-        scrollbar-color: hsl(var(--primary)) hsl(var(--background));
+        scrollbar-color: hsl(var(--accent)) hsl(var(--background));
     }
 }
 </style>

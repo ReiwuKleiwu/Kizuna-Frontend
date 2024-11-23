@@ -81,13 +81,13 @@ onUnmounted(() => {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: hsl(var(--primary));
+    background: hsl(var(--accent));
     border-radius: 30px;
 }
 
 @supports not selector(::-webkit-scrollbar) {
     * {
-        scrollbar-color: hsl(var(--primary)) hsl(var(--background));
+        scrollbar-color: hsl(var(--accent)) hsl(var(--background));
     }
 }
 </style>

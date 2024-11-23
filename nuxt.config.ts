@@ -9,7 +9,14 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt', '@nuxtjs/color-mode', '@nuxt/icon', 'vue3-perfect-scrollbar/nuxt'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    '@nuxtjs/color-mode',
+    '@nuxt/icon',
+    'vue3-perfect-scrollbar/nuxt',
+    '@nuxt/eslint',
+  ],
   colorMode: {
     classSuffix: '',
   },

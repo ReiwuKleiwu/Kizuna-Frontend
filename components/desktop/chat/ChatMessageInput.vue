@@ -3,11 +3,11 @@
     <Icon name="lucide:circle-plus" class="shrink-0" />
     <textarea
       ref="messageInput"
-      @input="autoResize"
       class="w-full bg-transparent border-none focus:outline-none resize-none overflow-y-auto max-h-[200px]"
       placeholder="Message #Room-Title"
       rows="1"
-    ></textarea>
+      @input="autoResize"
+    />
     <Icon name="lucide:sticker" class="shrink-0" />
   </div>
 </template>

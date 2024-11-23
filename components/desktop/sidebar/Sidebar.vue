@@ -7,19 +7,19 @@
       ]"
     >
       <ul class="list-none flex flex-col gap-2">
-        <SidebarHeader :isCollapsed="isCollapsed" :toggleSidebar="toggleSidebar" />
-        <div class="bg-border h-[1px] my-1"></div>
+        <SidebarHeader :is-collapsed="isCollapsed" :toggle-sidebar="toggleSidebar" />
+        <div class="bg-border h-[1px] my-1"/>
         <SidebarNavItem
           v-for="item in navItems"
           :key="item.label"
-          :iconName="item.icon"
+          :icon-name="item.icon"
           :label="item.label"
           :to="item.to"
-          :isCollapsed="isCollapsed"
+          :is-collapsed="isCollapsed"
         />
       </ul>
     </div>
-    <SidebarFooter :isCollapsed="isCollapsed" :user="user" />
+    <SidebarFooter :is-collapsed="isCollapsed" :user="user" />
   </nav>
 </template>
 

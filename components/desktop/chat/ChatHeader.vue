@@ -2,9 +2,9 @@
   <div class="flex items-center justify-between p-4 border-b border-bg-border">
     <h2 class="text-xl font-bold">Room-Name</h2>
     <div class="flex gap-1">
-      <TooltipProvider :delayDuration="100">
+      <TooltipProvider :delay-duration="100">
         <Tooltip>
-          <TooltipTrigger asChild>
+          <TooltipTrigger as-child>
             <NuxtLink
               class="rounded-lg p-2 no-underline flex items-center gap-6 hover:bg-accent group"
               to="/room-settings"
@@ -15,7 +15,7 @@
               />
             </NuxtLink>
           </TooltipTrigger>
-          <TooltipContent side="bottom" :sideOffset="8">
+          <TooltipContent side="bottom" :side-offset="8">
             <p>Room Settings</p>
           </TooltipContent>
         </Tooltip>

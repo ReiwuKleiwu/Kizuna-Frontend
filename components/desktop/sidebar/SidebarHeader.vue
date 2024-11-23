@@ -9,7 +9,7 @@
     >
       KIIZUNA | 絆
     </span>
-    <button @:click="toggleSidebar" class="flex p-4 border-none rounded-lg bg-none cursor-pointer hover:bg-accent">
+    <button class="flex p-4 border-none rounded-lg bg-none cursor-pointer hover:bg-accent" @:click="toggleSidebar">
       <Icon name="lucide:chevrons-left" :class="['transition-transform duration-300', { 'rotate-180': isCollapsed }]" />
     </button>
   </li>

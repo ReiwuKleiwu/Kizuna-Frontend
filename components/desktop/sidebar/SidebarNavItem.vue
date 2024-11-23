@@ -1,8 +1,8 @@
 <template>
-  <TooltipProvider :delayDuration="100">
+  <TooltipProvider :delay-duration="100">
     <li>
       <Tooltip>
-        <TooltipTrigger asChild>
+        <TooltipTrigger as-child>
           <NuxtLink
             class="rounded-lg p-4 no-underline flex items-center gap-6 hover:bg-accent"
             :to="to"
@@ -12,7 +12,7 @@
             <span class="grow">{{ label }}</span>
           </NuxtLink>
         </TooltipTrigger>
-        <TooltipContent v-if="isCollapsed" side="right" :sideOffset="8">
+        <TooltipContent v-if="isCollapsed" side="right" :side-offset="8">
           <p>{{ label }}</p>
         </TooltipContent>
       </Tooltip>

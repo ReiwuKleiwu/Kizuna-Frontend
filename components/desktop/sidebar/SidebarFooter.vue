@@ -7,17 +7,17 @@
   >
     <div class="flex items-center justify-between gap-5 w-full">
       <div class="rounded-lg flex p-2 items-center gap-5 hover:bg-accent w-full">
-        <img src="/public/images/profile_pic_1.jpg" class="rounded-full w-10 h-auto shrink-0" />
+        <img src="/public/images/profile_pic_1.jpg" class="rounded-full w-10 h-auto shrink-0" >
         <span class="grow">{{ user.username }}</span>
       </div>
-      <TooltipProvider :delayDuration="100">
+      <TooltipProvider :delay-duration="100">
         <Tooltip>
-          <TooltipTrigger asChild>
+          <TooltipTrigger as-child>
             <NuxtLink to="/profile-settings" class="rounded-lg flex p-2 hover:bg-accent">
               <Icon name="lucide:settings" class="shrink-0" />
             </NuxtLink>
           </TooltipTrigger>
-          <TooltipContent v-if="!isCollapsed" :sideOffset="4">
+          <TooltipContent v-if="!isCollapsed" :side-offset="4">
             <p>Profile Settings</p>
           </TooltipContent>
         </Tooltip>

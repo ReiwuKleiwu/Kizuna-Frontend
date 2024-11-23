@@ -19,4 +19,14 @@ import { Progress } from '~/components/ui/progress';
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.fade-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    background: linear-gradient(to top, hsl(var(--card)) 0%, transparent 100%);
+    pointer-events: none;
+}
+</style>

@@ -75,7 +75,7 @@
         <div
             v-if="isDialogOpen || isClosing"
             :class="[
-                'fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 border bg-background p-4 shadow-lg duration-200 rounded-lg',
+                'fixed left-1/2 top-1/2 z-50 -translate-x-1/2 -translate-y-1/2 border bg-background shadow-lg duration-200 rounded-lg',
                 {
                     'animate-in fade-in-0 zoom-in-95 slide-in-from-left-1/2 slide-in-from-top-[48%]':
                         isDialogOpen,
@@ -85,7 +85,7 @@
             ]"
             @animationend="handleAnimationEnd"
         >
-            <p>Dialog</p>
+            <ExploreChatroomDialog />
         </div>
     </div>
 </template>

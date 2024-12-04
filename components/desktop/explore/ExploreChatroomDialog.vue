@@ -3,12 +3,21 @@
         <div
             class="flex flex-col bg-card flex-1 rounded-lg border border-border"
         >
-            <div class="border-b border-border p-4">
-                <h2 class="text-xl font-bold">Room-Name</h2>
+            <!-- Header Area -->
+            <div class="border-b border-border p-6">
+                <h2 class="text-2xl font-extrabold tracking-wide text-primary">
+                    Room-Name
+                </h2>
             </div>
-            <div class="flex flex-col flex-1 h-40 border-b border-border p-4">
-                <h2 class="text-lg font-bold mb-2">Room-Description</h2>
-                <div class="flex-1 overflow-y-scroll">
+
+            <!-- Content Section -->
+            <div
+                class="flex flex-col flex-1 h-40 border-b border-border p-6 bg-content"
+            >
+                <h2 class="text-lg font-semibold mb-4">Room-Description</h2>
+                <div
+                    class="flex-1 overflow-y-scroll leading-relaxed text-gray-300"
+                >
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Alias commodi delectus, distinctio dolore eos hic illo in
                     maiores maxime neque nobis nostrum numquam officiis optio
@@ -24,6 +33,8 @@
                     perferendis qui rerum totam vel velit vitae.
                 </div>
             </div>
+
+            <!-- Badges -->
             <div class="flex flex-wrap gap-2 p-4 w-full">
                 <Badge># Badge</Badge>
                 <Badge># Badge</Badge>
@@ -70,5 +81,16 @@
     * {
         scrollbar-color: hsl(var(--accent)) hsl(var(--background));
     }
+}
+
+/* Updated Styling */
+.text-primary {
+    color: hsl(var(--primary));
+}
+
+.bg-content {
+    background-color: hsl(var(--background-alt));
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 </style>

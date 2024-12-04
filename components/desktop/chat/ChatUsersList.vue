@@ -3,10 +3,7 @@
         class="bg-card flex flex-col w-72 rounded-lg border border-solid border-bg-border text-card-foreground"
     >
         <ChatUsersListHeader />
-        <div
-            id="users-scroller"
-            class="overflow-x-hidden overflow-y-scroll flex-1 my-2 mr-1"
-        >
+        <div class="overflow-x-hidden overflow-y-scroll flex-1 my-2 mr-1">
             <div class="flex flex-col min-h-full relative px-2">
                 <ChatUser />
                 <ChatUser />

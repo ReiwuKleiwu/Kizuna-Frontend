@@ -7,7 +7,7 @@ import { Progress } from '~/components/ui/progress';
         <img
             class="w-full aspect-video rounded-t-lg border-solid border-bg-border"
             src="/public/images/room_wallpaper.png"
-        />
+        >
         <!--<div class="fade-overlay" aria-hidden="true" />-->
     </div>
     <div class="p-4 border-b border-solid border-bg-border flex flex-col gap-2">

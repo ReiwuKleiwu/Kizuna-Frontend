@@ -12,7 +12,7 @@
                 <img
                     src="/public/images/profile_pic_1.jpg"
                     class="rounded-full w-10 h-auto shrink-0"
-                />
+                >
                 <span class="grow">{{ user.username }}</span>
             </div>
             <TooltipProvider :delay-duration="100">

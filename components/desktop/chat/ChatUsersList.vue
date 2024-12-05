@@ -46,6 +46,10 @@
     </aside>
 </template>
 
+<script setup lang="ts">
+import ChatUsersListHeader from '~/components/desktop/chat/ChatUsersListHeader.vue';
+</script>
+
 <style scoped>
 .fade-overlay {
     position: absolute;
@@ -77,7 +81,3 @@
     }
 }
 </style>
-
-<script setup lang="ts">
-import ChatUsersListHeader from '~/components/desktop/chat/ChatUsersListHeader.vue';
-</script>

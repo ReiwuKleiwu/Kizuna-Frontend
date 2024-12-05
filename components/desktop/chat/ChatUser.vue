@@ -6,7 +6,7 @@
             class="w-10 h-auto rounded-md"
             src="/public/images/profile_pic_1.jpg"
             alt=""
-        />
+        >
         <span>Username</span>
     </div>
 </template>

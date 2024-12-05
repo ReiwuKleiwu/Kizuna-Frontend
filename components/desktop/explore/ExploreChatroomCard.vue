@@ -10,7 +10,7 @@
                     src="/public/images/room_wallpaper.png"
                     alt="Room Wallpaper"
                     class="w-full h-full object-cover"
-                />
+                >
             </div>
             <div class="p-4 border-b border-solid border-bg-border relative">
                 <TooltipProvider :delay-duration="100">
@@ -23,7 +23,7 @@
                                     class="w-10 h-auto rounded-md"
                                     src="/public/images/profile_pic_1.jpg"
                                     alt=""
-                                />
+                                >
                             </div>
                         </TooltipTrigger>
                         <TooltipContent side="right" :side-offset="4">
@@ -69,7 +69,7 @@
             ]"
             @click="closeDialog"
             @animationend="handleAnimationEnd"
-        ></div>
+        />
 
         <!-- Dialog -->
         <div

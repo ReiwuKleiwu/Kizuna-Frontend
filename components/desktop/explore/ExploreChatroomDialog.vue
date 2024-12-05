@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="flex flex-col gap-4 h-full">
-            <ChatUsersList class="overflow-y-scroll" />
+            <ChatUsersList class="flex-1 max-h-full overflow-y-auto"/>
             <Button>Join</Button>
         </div>
     </div>

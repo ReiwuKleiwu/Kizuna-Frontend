@@ -15,22 +15,12 @@
                 class="flex flex-col flex-1 h-40 border-b border-border p-6 bg-content"
             >
                 <h2 class="text-lg font-semibold mb-4">Room-Description</h2>
-                <div
-                    class="flex-1 overflow-y-scroll leading-relaxed text-gray-300"
-                >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Alias commodi delectus, distinctio dolore eos hic illo in
-                    maiores maxime neque nobis nostrum numquam officiis optio
-                    placeat quisquam, ratione rerum sed veritatis voluptatem. Ad
-                    adipisci at beatae corporis culpa cumque deserunt dolor
-                    dolore doloribus eos eveniet fuga inventore ipsam laudantium
-                    libero minima molestias natus nihil nisi numquam quidem, rem
-                    reprehenderit sapiente sequi voluptates, voluptatibus
-                    voluptatum. Amet consequuntur doloribus dolorum fuga illo
-                    ipsam minima qui quis reprehenderit velit. Dolorum iure
-                    iusto minima nisi possimus quasi veniam. Ab consequatur
-                    dolorum eius fugit ipsam, molestiae, nam nesciunt
-                    perferendis qui rerum totam vel velit vitae.
+                <div class="mr-2 overflow-y-scroll overflow-x-hidden box-border flex-1 min-h-0">
+                    <div class="min-h-full relative">
+                        <div class="min-h-0 overflow-hidden pr-4">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam cumque eaque, facere facilis omnis sequi ullam vel velit. Accusamus cupiditate doloremque, ea est ipsa numquam optio possimus qui, repellat rerum similique suscipit unde veritatis voluptate voluptatem? Ab architecto aspernatur beatae error, esse est libero quae quaerat repellendus repudiandae. A assumenda, aut doloremque facere fuga fugiat nesciunt obcaecati placeat praesentium quae quod quos ratione recusandae rerum temporibus, ullam unde voluptatum? Accusantium blanditiis commodi cumque, dicta ea eligendi eum fugit iste iure libero nostrum numquam, odio placeat quos sequi unde velit voluptas. Ad aut commodi consectetur consequatur corporis deleniti deserunt dignissimos distinctio earum eum excepturi fuga fugit harum magni maxime modi nihil obcaecati odio officia possimus quas quis quos, rem repudiandae soluta sunt, suscipit tenetur ullam unde voluptates? A, accusantium aliquid assumenda atque blanditiis, culpa debitis delectus dolor ducimus eos explicabo fugit ipsa ipsum itaque laudantium magni maiores minus modi mollitia nemo nihil nobis, numquam odio omnis porro quas quasi quis quisquam sapiente similique tempore tenetur velit vitae! Aperiam corporis cumque dignissimos, error explicabo fuga inventore ipsam iusto mollitia, nisi non, nostrum odit optio praesentium provident quisquam tempore unde. Aliquid blanditiis enim ex exercitationem facilis incidunt iste iusto labore laboriosam libero magnam minus molestias numquam, odio odit, quo sunt temporibus totam unde voluptatum! Consequuntur cupiditate, distinctio eum id impedit inventore iste iure laboriosam modi natus non, nostrum praesentium quia quod reiciendis rerum saepe sunt totam. Adipisci consequatur dolore esse exercitationem facere ipsum minima numquam possimus repellendus ut! Adipisci aliquid asperiores consequatur cupiditate dicta doloribus dolorum eos esse eveniet expedita explicabo fugiat id laborum laudantium, minus mollitia nihil nostrum omnis pariatur quia quo quos ratione sapiente tenetur veniam. Aliquam amet blanditiis delectus distinctio excepturi exercitationem fugiat impedit ipsa ipsam, iusto laudantium, nihil odit praesentium quis saepe sapiente, voluptates? Animi aspernatur debitis deserunt dignissimos dolor, dolore doloremque esse explicabo illum itaque iure magni modi neque nesciunt nihil nobis obcaecati quaerat quasi quisquam recusandae repellendus saepe, sit, soluta tempore temporibus velit veniam? Cum odio odit officia quasi? Aliquid eligendi excepturi facilis harum incidunt ipsam labore, praesentium quas quod repudiandae sequi similique sunt tempore, vel.
+                        </div>
+                    </div>
                 </div>
             </div>
 

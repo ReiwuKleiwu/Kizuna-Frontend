@@ -5,13 +5,13 @@
         <img
             src="/public/images/profile_pic_1.jpg"
             class="w-12 h-auto rounded-lg justify-self-center self-start mt-1"
-        >
+        />
         <div>
             <div class="flex gap-4 items-center">
                 <div>
                     <span class="text-card-foreground-highlight font-bold"
-                        >Username</span
-                    >
+                        >Username
+                    </span>
                 </div>
                 <div>
                     <span class="text-muted-foreground text-xs"

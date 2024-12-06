@@ -7,19 +7,21 @@
             <div
                 class="border-b border-border p-6 flex items-center justify-between"
             >
-                <h2 class="text-2xl font-extrabold tracking-wide text-primary">
-                    Room-Name
-                </h2>
+                <div class="flex gap-2 items-center">
+                    <h2
+                        class="text-2xl font-extrabold tracking-wide text-primary"
+                    >
+                        Room-Name
+                    </h2>
+                </div>
+
                 <div class="flex gap-4 items-center">
                     <Icon
                         name="lucide:triangle-alert"
                         class="text-card-foreground"
                     />
                     <Icon name="lucide:lock" class="text-card-foreground" />
-                    <Icon
-                        name="twemoji:flag-japan"
-                        class="text-card-foreground"
-                    />
+                    <CountryBadge language-code="jp" />
                 </div>
             </div>
 
@@ -113,7 +115,9 @@
     </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CountryFlag from '~/components/desktop/util/CountryFlag.vue';
+</script>
 
 <style scoped>
 .scroll-container {

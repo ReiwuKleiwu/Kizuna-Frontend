@@ -10,7 +10,7 @@
                     src="/public/images/room_wallpaper.png"
                     alt="Room Wallpaper"
                     class="w-full h-full object-cover"
-                >
+                />
             </div>
             <div class="p-4 border-b border-solid border-bg-border relative">
                 <TooltipProvider :delay-duration="100">
@@ -23,7 +23,7 @@
                                     class="w-10 h-auto rounded-md"
                                     src="/public/images/profile_pic_1.jpg"
                                     alt=""
-                                >
+                                />
                             </div>
                         </TooltipTrigger>
                         <TooltipContent side="right" :side-offset="4">
@@ -32,7 +32,10 @@
                     </Tooltip>
                 </TooltipProvider>
                 <div class="flex flex-col items-start gap-1 w-full">
-                    <h2 class="text-lg font-semibold">Room-name</h2>
+                    <div class="flex w-full gap-2 items-center justify-between">
+                        <h2 class="text-lg font-semibold">Room-name</h2>
+                        <CountryBadge language-code="jp" />
+                    </div>
                 </div>
                 <div class="flex flex-col gap-2">
                     <span class="text-muted-foreground text-sm"

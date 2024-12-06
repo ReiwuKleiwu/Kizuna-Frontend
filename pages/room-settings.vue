@@ -1,5 +1,5 @@
 <template>
-    <div>
-        <p>Room Setings</p>
+    <div class="flex flex-1">
+        <RoomSettingsContainer />
     </div>
 </template>

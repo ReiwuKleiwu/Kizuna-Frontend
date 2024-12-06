@@ -36,7 +36,7 @@
                         <h2 class="text-lg font-semibold truncate">
                             Room-Name
                         </h2>
-                        <CountryBadge class="shrink-0" language-code="zh" />
+                        <CountryBadge class="shrink-0" language-code="de" />
                     </div>
                 </div>
                 <div class="flex flex-col gap-2">

@@ -21,7 +21,7 @@
                         class="text-card-foreground"
                     />
                     <Icon name="lucide:lock" class="text-card-foreground" />
-                    <CountryBadge language-code="jp" />
+                    <CountryBadge language-code="de" />
                 </div>
             </div>
 

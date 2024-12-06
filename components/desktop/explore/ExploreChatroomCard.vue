@@ -2,7 +2,7 @@
     <div>
         <!-- Room card -->
         <div
-            class="bg-background min-w-80 rounded-lg border border-border overflow-hidden hover:bg-accent group text-foreground h-fit cursor-pointer"
+            class="bg-background min-w-80 h-[26rem] rounded-lg border border-border overflow-hidden hover:bg-accent group text-foreground h-fit cursor-pointer"
             @click="openDialog"
         >
             <div class="relative aspect-video">
@@ -33,8 +33,10 @@
                 </TooltipProvider>
                 <div class="flex flex-col items-start gap-1 w-full">
                     <div class="flex w-full gap-2 items-center justify-between">
-                        <h2 class="text-lg font-semibold">Room-name</h2>
-                        <CountryBadge language-code="jp" />
+                        <h2 class="text-lg font-semibold truncate">
+                            Room-Name
+                        </h2>
+                        <CountryBadge class="shrink-0" language-code="zh" />
                     </div>
                 </div>
                 <div class="flex flex-col gap-2">
@@ -46,14 +48,26 @@
             </div>
             <div class="p-4">
                 <div class="flex items-center">
-                    <div>
+                    <div class="w-full">
                         <p
-                            class="text-sm text-muted-foreground group-hover:text-foreground"
+                            class="text-sm text-muted-foreground group-hover:text-foreground break-all line-clamp-5"
                         >
-                            Lorem ipsum dolor sit amet consectetur, adipisicing
-                            elit. Et neque eaque aspernatur placeat aut iusto
-                            deserunt asperiores provident ad voluptate
-                            cupiditate tempore corporis, animi nisi!.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Amet delectus itaque minus modi optio?
+                            Accusantium adipisci aperiam assumenda atque
+                            consectetur consequatur consequuntur doloribus
+                            eligendi illum incidunt magni maxime molestias nobis
+                            possimus quae quia quis, tempora? Alias amet hic
+                            laboriosam, magni maxime perferendis sed. A at aut
+                            commodi deserunt iusto nobis perferendis unde.
+                            Beatae maiores nesciunt officia recusandae repellat.
+                            At doloremque enim fugit illum nesciunt ratione
+                            repudiandae sunt vero. Autem ipsam nemo officia
+                            possimus qui sint vel, voluptatum! Ad cum deleniti
+                            dicta dolore, doloribus, ipsam iste iusto magnam
+                            molestiae necessitatibus nihil odio provident quasi
+                            quod saepe vitae voluptate voluptatem. Cumque,
+                            iusto!
                         </p>
                     </div>
                 </div>

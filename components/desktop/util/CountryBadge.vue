@@ -26,16 +26,18 @@ const languageCodeToFlag: Record<string, string> = {
     it: 'italy',
     jp: 'japan',
     kr: 'south-korea',
+    zh: 'china',
 };
 
 const languageCodeToLanguage: Record<string, string> = {
     en: 'English',
-    fr: 'French',
-    de: 'German',
-    es: 'Spanish',
-    it: 'Italian',
-    jp: 'Japanese',
-    kr: 'Korean',
+    fr: 'Français',
+    de: 'Deutsch',
+    es: 'Español',
+    it: 'Italiano',
+    jp: '日本語',
+    kr: '한국어',
+    zh: '中文',
 };
 </script>
 

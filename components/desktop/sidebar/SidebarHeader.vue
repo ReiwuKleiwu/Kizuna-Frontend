@@ -25,9 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps } from 'vue';
-
-const props = defineProps({
+defineProps({
     isCollapsed: Boolean,
     toggleSidebar: {
         type: Function,

@@ -115,9 +115,7 @@
     </div>
 </template>
 
-<script setup lang="ts">
-import CountryFlag from '~/components/desktop/util/CountryFlag.vue';
-</script>
+<script setup lang="ts"></script>
 
 <style scoped>
 .scroll-container {

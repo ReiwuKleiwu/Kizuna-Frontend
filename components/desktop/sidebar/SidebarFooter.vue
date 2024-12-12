@@ -35,7 +35,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
+defineProps({
     isCollapsed: Boolean,
     user: {
         type: Object,

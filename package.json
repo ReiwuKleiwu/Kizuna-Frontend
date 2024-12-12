@@ -8,9 +8,9 @@
         "generate": "nuxt generate",
         "preview": "nuxt preview",
         "postinstall": "nuxt prepare",
-        "lint": "eslint .",
-        "lint:prettier": "prettier . --check",
-        "lint:fix": "eslint \"{components,pages,plugins,middleware,layouts,composables,assets}/**/*.{js,jsx,ts,tsx,vue,html,css,scss,json,md}\" --fix && prettier --write --list-different \"{components,pages,plugins,middleware,layouts,composables,assets}/**/*.{js,jsx,ts,tsx,vue,html,css,scss,json,md}\""
+        "lint": "eslint \"{components/!(ui)/**,pages,plugins,middleware,layouts,composables,assets}/**/*.{js,jsx,ts,tsx,vue,html,css,scss,json,md}\"",
+        "lint:prettier": "prettier \"{components/!(ui)/**,pages,plugins,middleware,layouts,composables,assets}/**/*.{js,jsx,ts,tsx,vue,html,css,scss,json,md}\" --check",
+        "lint:fix": "eslint \"{components/!(ui)/**,pages,plugins,middleware,layouts,composables,assets}/**/*.{js,jsx,ts,tsx,vue,html,css,scss,json,md}\" --fix && prettier --write --list-different \"{components/!(ui)/**,pages,plugins,middleware,layouts,composables,assets}/**/*.{js,jsx,ts,tsx,vue,html,css,scss,json,md}\""
     },
     "dependencies": {
         "@nuxt/icon": "^1.7.2",

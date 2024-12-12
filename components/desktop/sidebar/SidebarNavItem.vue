@@ -37,8 +37,14 @@ const props = defineProps({
         type: String,
         required: true,
     },
-    label: String,
-    to: String,
+    label: {
+        type: String,
+        required: true,
+    },
+    to: {
+        type: String,
+        required: true,
+    },
     isCollapsed: Boolean,
 });
 

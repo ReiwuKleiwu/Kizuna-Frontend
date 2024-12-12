@@ -1,27 +1,30 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="flex h-full flex-1">
-        <div
-            class="grid h-full flex-1 grid-cols-[1fr_min(70ch,_100%)_1fr] gap-2"
-        >
+    <div class="flex h-full flex-1 p-4">
+        <div class="grid h-full flex-1 grid-cols-[1fr_min(80ch,_100%)_1fr]">
             <div
-                class="col-span-1 col-start-2 h-full overflow-y-auto overflow-x-hidden"
+                class="col-span-1 col-start-2 flex h-full flex-col gap-4 overflow-y-hidden"
             >
-                <div class="mr-2 flex flex-col gap-2">
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
-                    <MemberSettingsUser />
+                <h1 class="text-2xl font-semibold">Members</h1>
+                <div
+                    class="flex flex-1 flex-col gap-4 overflow-y-auto overflow-x-hidden"
+                >
+                    <div class="mr-2 flex flex-col gap-2">
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                        <MemberSettingsUser />
+                    </div>
                 </div>
             </div>
         </div>

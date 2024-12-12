@@ -1,20 +1,20 @@
 <template>
     <div
-        class="text-card-foreground relative grid grid-cols-[80px_1fr] w-auto p-2 mt-6 mr-4 rounded-lg hover:bg-background group"
+        class="group relative mr-4 mt-6 grid w-auto grid-cols-[80px_1fr] rounded-lg p-2 text-card-foreground hover:bg-background"
     >
         <img
             src="/public/images/profile_pic_1.jpg"
-            class="w-12 h-auto rounded-lg justify-self-center self-start mt-1"
+            class="mt-1 h-auto w-12 self-start justify-self-center rounded-lg"
         />
         <div>
-            <div class="flex gap-4 items-center">
+            <div class="flex items-center gap-4">
                 <div>
-                    <span class="text-card-foreground-highlight font-bold"
+                    <span class="font-bold text-card-foreground-highlight"
                         >Username
                     </span>
                 </div>
                 <div>
-                    <span class="text-muted-foreground text-xs"
+                    <span class="text-xs text-muted-foreground"
                         >Today at 17:08 Uhr</span
                     >
                 </div>
@@ -37,13 +37,13 @@
                 </span>
             </div>
             <div
-                class="absolute -top-6 right-4 p-1 grid grid-flow-col items-center justify-center gap-1 bg-background rounded-md z-[1] border opacity-0 group-hover:opacity-100 transition-opacity"
+                class="absolute -top-6 right-4 z-[1] grid grid-flow-col items-center justify-center gap-1 rounded-md border bg-background p-1 opacity-0 transition-opacity group-hover:opacity-100"
             >
                 <TooltipProvider :delay-duration="100">
                     <Tooltip>
                         <TooltipTrigger as-child>
                             <div
-                                class="flex items-center justify-center p-1 rounded-md hover:bg-accent"
+                                class="flex items-center justify-center rounded-md p-1 hover:bg-accent"
                             >
                                 <Icon name="lucide:reply" />
                             </div>
@@ -57,7 +57,7 @@
                     <Tooltip>
                         <TooltipTrigger as-child>
                             <div
-                                class="flex items-center justify-center p-1 rounded-md hover:bg-accent"
+                                class="flex items-center justify-center rounded-md p-1 hover:bg-accent"
                             >
                                 <Icon name="lucide:pen" />
                             </div>
@@ -71,7 +71,7 @@
                     <Tooltip>
                         <TooltipTrigger as-child>
                             <div
-                                class="flex items-center justify-center p-1 rounded-md hover:bg-accent"
+                                class="flex items-center justify-center rounded-md p-1 hover:bg-accent"
                             >
                                 <Icon name="lucide:trash" />
                             </div>

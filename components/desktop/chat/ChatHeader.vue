@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex items-center justify-between p-4 border-b border-bg-border"
+        class="border-bg-border flex items-center justify-between border-b p-4"
     >
         <h2 class="text-xl font-extrabold">Room-Name</h2>
         <div class="flex gap-1">
@@ -8,12 +8,12 @@
                 <Tooltip>
                     <TooltipTrigger as-child>
                         <NuxtLink
-                            class="rounded-lg p-2 no-underline flex items-center gap-6 hover:bg-accent group"
+                            class="group flex items-center gap-6 rounded-lg p-2 no-underline hover:bg-accent"
                             to="/room-settings"
                         >
                             <Icon
                                 name="lucide:settings-2"
-                                class="text-card-foreground shrink-0 group-hover:text-card-foreground-highlight"
+                                class="shrink-0 text-card-foreground group-hover:text-card-foreground-highlight"
                             />
                         </NuxtLink>
                     </TooltipTrigger>

@@ -7,28 +7,28 @@ const roomTags = ref<string[]>([]);
 <template>
     <div class="grid w-full max-w-sm items-center gap-6">
         <!-- Room Name -->
-        <div class="w-64 flex flex-col gap-1">
-            <Label class="uppercase text-xs font-semibold" for="room-name"
+        <div class="flex w-64 flex-col gap-1">
+            <Label class="text-xs font-semibold uppercase" for="room-name"
                 >Room Name</Label
             >
             <Input
-                class="rounded-sm"
                 id="room-name"
+                class="rounded-sm"
                 type="text"
                 placeholder="Enter room name"
             />
         </div>
 
         <!-- Room Description -->
-        <div class="w-full">
+        <div class="flex w-96 flex-col gap-1">
             <Label
-                class="uppercase text-xs font-semibold"
+                class="text-xs font-semibold uppercase"
                 for="room-description"
                 >Room Description</Label
             >
             <Textarea
                 id="room-description"
-                class="rounded-sm resize-none"
+                class="resize-none rounded-sm"
                 rows="7"
                 placeholder="Enter room description"
             />
@@ -36,7 +36,7 @@ const roomTags = ref<string[]>([]);
 
         <!-- Room Tags -->
         <div class="w-full">
-            <Label class="uppercase text-xs font-semibold" for="room-tags"
+            <Label class="text-xs font-semibold uppercase" for="room-tags"
                 >Room Tags</Label
             >
             <TagsInput

@@ -1,6 +1,6 @@
 <template>
     <main
-        class="bg-card flex-1 flex flex-col rounded-lg border border-solid border-bg-border text-card-foreground"
+        class="border-bg-border flex flex-1 flex-col rounded-lg border border-solid bg-card text-card-foreground"
     >
         <ChatHeader />
         <ChatMessageContainer />

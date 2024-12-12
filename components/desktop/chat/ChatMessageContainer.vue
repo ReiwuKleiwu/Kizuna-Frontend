@@ -1,11 +1,11 @@
 <template>
-    <div class="bg-card flex flex-1 relative min-h-0 min-w-0 p-4">
+    <div class="relative flex min-h-0 min-w-0 flex-1 bg-card p-4">
         <div
             id="message-scroller"
-            class="mr-2 overflow-y-scroll overflow-x-hidden box-border flex-1 min-h-0"
+            class="mr-2 box-border min-h-0 flex-1 overflow-x-hidden overflow-y-scroll"
         >
-            <div class="flex flex-col justify-end min-h-full relative">
-                <ol class="min-h-0 overflow-hidden list-none">
+            <div class="relative flex min-h-full flex-col justify-end">
+                <ol class="min-h-0 list-none overflow-hidden">
                     <ChatMessage
                         v-for="(message, index) in messages"
                         :key="index"

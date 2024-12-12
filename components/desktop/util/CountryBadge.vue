@@ -1,6 +1,6 @@
 <template>
     <div
-        class="flex gap-2 py-1 px-2 items-center rounded-md border border-border"
+        class="flex items-center gap-2 rounded-md border border-border px-2 py-1"
     >
         <CountryFlag :country="languageCodeToFlag[languageCode]" />
         <span class="font-semibold">{{

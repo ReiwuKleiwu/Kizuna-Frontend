@@ -1,10 +1,10 @@
 <template>
     <div
-        class="bg-card h-12 rounded-lg border border-border p-2 gap-2 grid grid-cols-3 items-center"
+        class="grid h-12 grid-cols-3 items-center gap-2 rounded-lg border border-border bg-card p-2"
     >
         <NuxtLink
             to="chat"
-            class="p-1 flex hover:bg-accent rounded-md justify-self-start"
+            class="flex justify-self-start rounded-md p-1 hover:bg-accent"
         >
             <Icon name="lucide:x" />
         </NuxtLink>
@@ -14,7 +14,7 @@
                 v-for="tab in tabs"
                 :key="tab.value"
                 :class="[
-                    'cursor-pointer px-4 py-1 rounded-md',
+                    'cursor-pointer rounded-md px-4 py-1',
                     selectedTab === tab.value
                         ? 'bg-primary text-primary-foreground'
                         : 'hover:bg-accent',
@@ -28,7 +28,7 @@
 
     <!-- Tab content -->
     <div
-        class="bg-card flex-1 rounded-lg border border-border p-4 overflow-hidden"
+        class="flex-1 overflow-hidden rounded-lg border border-border bg-card p-4"
     >
         <OverviewSettings v-if="selectedTab === 'overview'" />
         <MemberSettings v-else-if="selectedTab === 'members'" />

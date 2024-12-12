@@ -2,13 +2,13 @@
 
 <template>
     <div
-        class="bg-card grid grid-cols-[1fr_min(100ch,_100%)_1fr] flex-1 p-4 rounded-lg border border-border"
+        class="grid flex-1 grid-cols-[1fr_min(100ch,_100%)_1fr] rounded-lg border border-border bg-card p-4"
     >
         <div class="col-span-1 col-start-2">
             <Tabs default-value="overview">
                 <div class="flex gap-4">
                     <TabsList>
-                        <div class="flex flex-col w-40">
+                        <div class="flex w-40 flex-col">
                             <TabsTrigger value="overview">Overview</TabsTrigger>
                             <TabsTrigger value="Roles">Roles</TabsTrigger>
                             <TabsTrigger value="members">Members</TabsTrigger>

@@ -2,23 +2,23 @@
 
 <template>
     <div
-        class="bg-background flex items-center p-2 pr-4 rounded-lg hover:bg-accent"
+        class="flex items-center rounded-lg bg-background p-2 pr-4 hover:bg-accent"
     >
         <div class="flex flex-1 items-center gap-2">
             <img
-                class="w-10 h-auto rounded-md"
+                class="h-auto w-10 rounded-md"
                 src="/public/images/profile_pic_1.jpg"
                 alt=""
             />
             <span>Username</span>
         </div>
-        <div class="flex gap-1 items">
+        <div class="items flex gap-1">
             <TooltipProvider :delay-duration="100">
                 <div class="flex flex-col items-center justify-center">
                     <Tooltip>
                         <TooltipTrigger as-child>
                             <div
-                                class="rounded-lg p-2 flex items-center hover:bg-card"
+                                class="flex items-center rounded-lg p-2 hover:bg-card"
                             >
                                 <Icon class="" name="lucide:user-round-minus" />
                             </div>
@@ -32,7 +32,7 @@
                     <Tooltip>
                         <TooltipTrigger as-child>
                             <div
-                                class="rounded-lg p-2 flex items-center hover:bg-card"
+                                class="flex items-center rounded-lg p-2 hover:bg-card"
                             >
                                 <Icon name="lucide:user-round-x" />
                             </div>
@@ -46,7 +46,7 @@
                     <Tooltip>
                         <TooltipTrigger as-child>
                             <div
-                                class="rounded-lg p-2 flex items-center hover:bg-card"
+                                class="flex items-center rounded-lg p-2 hover:bg-card"
                             >
                                 <Icon name="lucide:star" />
                             </div>

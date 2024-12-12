@@ -1,18 +1,18 @@
 <template>
     <div
         :class="[
-            'h-16 text-card-foreground flex justify-center overflow-hidden text-nowrap transition-all duration-300 ease-in-out rounded-lg border border-bg-border border-solid bg-card',
-            { 'w-[66px] p-1': isCollapsed, 'w-64 py-1 px-2': !isCollapsed },
+            'border-bg-border flex h-16 justify-center overflow-hidden text-nowrap rounded-lg border border-solid bg-card text-card-foreground transition-all duration-300 ease-in-out',
+            { 'w-[66px] p-1': isCollapsed, 'w-64 px-2 py-1': !isCollapsed },
         ]"
     >
-        <div class="flex items-center justify-between gap-5 w-full">
+        <div class="flex w-full items-center justify-between gap-5">
             <div
-                class="rounded-lg flex p-2 items-center gap-5 hover:bg-accent w-full"
+                class="flex w-full items-center gap-5 rounded-lg p-2 hover:bg-accent"
             >
                 <img
                     src="/public/images/profile_pic_1.jpg"
-                    class="rounded-full w-10 h-auto shrink-0"
-                >
+                    class="h-auto w-10 shrink-0 rounded-full"
+                />
                 <span class="grow">{{ user.username }}</span>
             </div>
             <TooltipProvider :delay-duration="100">
@@ -20,7 +20,7 @@
                     <TooltipTrigger as-child>
                         <NuxtLink
                             to="/profile-settings"
-                            class="rounded-lg flex p-2 hover:bg-accent"
+                            class="flex rounded-lg p-2 hover:bg-accent"
                         >
                             <Icon name="lucide:settings" class="shrink-0" />
                         </NuxtLink>

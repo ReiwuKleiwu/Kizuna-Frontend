@@ -2,16 +2,16 @@
     <nav :class="['flex flex-col gap-4']">
         <div
             :class="[
-                'flex-1 text-card-foreground flex flex-col overflow-hidden text-nowrap transition-all duration-300 ease-in-out rounded-lg border border-bg-border border-solid bg-card',
-                { 'w-[66px] p-1': isCollapsed, 'w-64 py-1 px-2': !isCollapsed },
+                'border-bg-border flex flex-1 flex-col overflow-hidden text-nowrap rounded-lg border border-solid bg-card text-card-foreground transition-all duration-300 ease-in-out',
+                { 'w-[66px] p-1': isCollapsed, 'w-64 px-2 py-1': !isCollapsed },
             ]"
         >
-            <ul class="list-none flex flex-col gap-2">
+            <ul class="flex list-none flex-col gap-2">
                 <SidebarHeader
                     :is-collapsed="isCollapsed"
                     :toggle-sidebar="toggleSidebar"
                 />
-                <div class="bg-border h-[1px] my-1" />
+                <div class="my-1 h-[1px] bg-border" />
                 <SidebarNavItem
                     v-for="item in navItems"
                     :key="item.label"

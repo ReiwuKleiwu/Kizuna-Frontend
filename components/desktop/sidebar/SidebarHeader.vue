@@ -1,7 +1,7 @@
 <template>
     <li class="flex justify-end">
         <span
-            class="font-semibold tracking-widest mr-auto p-4 flex items-center transition-all duration-300 ease-in-out"
+            class="mr-auto flex items-center p-4 font-semibold tracking-widest transition-all duration-300 ease-in-out"
             :class="{
                 'translate-x-0 opacity-100': !isCollapsed,
                 '-translate-x-full opacity-0': isCollapsed,
@@ -10,7 +10,7 @@
             KIIZUNA | 絆
         </span>
         <button
-            class="flex p-4 border-none rounded-lg bg-none cursor-pointer hover:bg-accent"
+            class="flex cursor-pointer rounded-lg border-none bg-none p-4 hover:bg-accent"
             @:click="toggleSidebar"
         >
             <Icon

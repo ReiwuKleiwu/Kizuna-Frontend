@@ -1,13 +1,13 @@
 <template>
-    <div class="rounded-lg p-4 flex gap-4 min-h-[40rem] aspect-video">
+    <div class="flex aspect-video min-h-[40rem] gap-4 rounded-lg p-4">
         <div
-            class="flex flex-col bg-card flex-1 rounded-lg border border-border"
+            class="flex flex-1 flex-col rounded-lg border border-border bg-card"
         >
             <!-- Header Area -->
             <div
-                class="border-b border-border p-6 flex items-center justify-between"
+                class="flex items-center justify-between border-b border-border p-6"
             >
-                <div class="flex gap-2 items-center">
+                <div class="flex items-center gap-2">
                     <h2
                         class="text-2xl font-extrabold tracking-wide text-primary"
                     >
@@ -15,7 +15,7 @@
                     </h2>
                 </div>
 
-                <div class="flex gap-4 items-center">
+                <div class="flex items-center gap-4">
                     <Icon
                         name="lucide:triangle-alert"
                         class="text-card-foreground"
@@ -27,13 +27,13 @@
 
             <!-- Content Section -->
             <div
-                class="flex flex-col flex-1 h-40 border-b border-border p-6 bg-content"
+                class="bg-content flex h-40 flex-1 flex-col border-b border-border p-6"
             >
-                <h2 class="text-lg font-semibold mb-4">Room-Description</h2>
+                <h2 class="mb-4 text-lg font-semibold">Room-Description</h2>
                 <div
-                    class="overflow-y-scroll overflow-x-hidden box-border flex-1 min-h-0"
+                    class="box-border min-h-0 flex-1 overflow-x-hidden overflow-y-scroll"
                 >
-                    <div class="min-h-full relative">
+                    <div class="relative min-h-full">
                         <div
                             class="min-h-0 overflow-hidden pr-4 text-muted-foreground"
                         >
@@ -97,7 +97,7 @@
             </div>
 
             <!-- Badges -->
-            <div class="flex flex-wrap gap-2 p-4 w-full">
+            <div class="flex w-full flex-wrap gap-2 p-4">
                 <Badge># Badge</Badge>
                 <Badge># Badge</Badge>
                 <Badge># Badge</Badge>
@@ -108,8 +108,8 @@
                 <Badge># Badge</Badge>
             </div>
         </div>
-        <div class="flex flex-col gap-4 h-full">
-            <ChatUsersList class="flex-1 max-h-full overflow-y-auto" />
+        <div class="flex h-full flex-col gap-4">
+            <ChatUsersList class="max-h-full flex-1 overflow-y-auto" />
             <Button>Join</Button>
         </div>
     </div>

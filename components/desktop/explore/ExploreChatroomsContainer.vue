@@ -2,13 +2,13 @@
 
 <template>
     <div
-        class="bg-card p-4 flex flex-1 justify-start relative rounded-lg border border-solid border-bg-border text-card-foreground min-h-0 min-w-0"
+        class="border-bg-border relative flex min-h-0 min-w-0 flex-1 justify-start rounded-lg border border-solid bg-card p-4 text-card-foreground"
     >
         <div
-            class="mr-2 overflow-y-scroll overflow-x-hidden box-border flex-1 min-h-0"
+            class="mr-2 box-border min-h-0 flex-1 overflow-x-hidden overflow-y-scroll"
         >
             <div
-                class="grid flex-1 grid-cols-[repeat(auto-fill,_20rem)] justify-center gap-4 min-h-full relative"
+                class="relative grid min-h-full flex-1 grid-cols-[repeat(auto-fill,_20rem)] justify-center gap-4"
             >
                 <ExploreChatroomCard />
                 <ExploreChatroomCard />

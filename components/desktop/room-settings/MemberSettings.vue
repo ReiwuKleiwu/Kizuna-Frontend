@@ -1,14 +1,14 @@
 <script setup lang="ts"></script>
 
 <template>
-    <div class="flex flex-1 h-full">
+    <div class="flex h-full flex-1">
         <div
-            class="flex-1 grid grid-cols-[1fr_min(70ch,_100%)_1fr] gap-2 h-full"
+            class="grid h-full flex-1 grid-cols-[1fr_min(70ch,_100%)_1fr] gap-2"
         >
             <div
-                class="col-span-1 col-start-2 overflow-y-auto overflow-x-hidden h-full"
+                class="col-span-1 col-start-2 h-full overflow-y-auto overflow-x-hidden"
             >
-                <div class="mr-2 flex gap-2 flex-col">
+                <div class="mr-2 flex flex-col gap-2">
                     <MemberSettingsUser />
                     <MemberSettingsUser />
                     <MemberSettingsUser />

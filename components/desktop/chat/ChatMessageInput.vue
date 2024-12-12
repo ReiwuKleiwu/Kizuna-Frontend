@@ -1,9 +1,9 @@
 <template>
-    <div class="flex p-3 m-4 bg-textarea-background rounded-lg gap-2">
+    <div class="m-4 flex gap-2 rounded-lg bg-textarea-background p-3">
         <Icon name="lucide:circle-plus" class="shrink-0" />
         <textarea
             ref="messageInput"
-            class="w-full bg-transparent border-none focus:outline-none resize-none overflow-y-auto max-h-[200px]"
+            class="max-h-[200px] w-full resize-none overflow-y-auto border-none bg-transparent focus:outline-none"
             placeholder="Message #Room-Title"
             rows="1"
             @input="autoResize"

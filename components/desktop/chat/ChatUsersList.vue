@@ -1,10 +1,10 @@
 <template>
     <aside
-        class="bg-card flex flex-col w-72 rounded-lg border border-solid border-bg-border text-card-foreground"
+        class="border-bg-border flex w-72 flex-col rounded-lg border border-solid bg-card text-card-foreground"
     >
         <ChatUsersListHeader />
-        <div class="overflow-x-hidden overflow-y-scroll flex-1 my-2 mr-1">
-            <div class="flex flex-col min-h-full relative px-2">
+        <div class="my-2 mr-1 flex-1 overflow-x-hidden overflow-y-scroll">
+            <div class="relative flex min-h-full flex-col px-2">
                 <ChatUser />
                 <ChatUser />
                 <ChatUser />

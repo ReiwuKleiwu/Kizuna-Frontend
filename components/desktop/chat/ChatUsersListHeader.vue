@@ -5,23 +5,23 @@ import { Progress } from '~/components/ui/progress';
 <template>
     <div class="relative">
         <img
-            class="w-full aspect-video rounded-t-lg border-solid border-bg-border"
+            class="border-bg-border aspect-video w-full rounded-t-lg border-solid"
             src="/public/images/room_wallpaper.png"
         />
         <!--<div class="fade-overlay" aria-hidden="true" />-->
     </div>
     <div
-        class="p-4 border-b border-solid border-bg-border flex flex-col gap-2 relative"
+        class="border-bg-border relative flex flex-col gap-2 border-b border-solid p-4"
     >
         <TooltipProvider :delay-duration="100">
             <Tooltip>
                 <TooltipTrigger as-child>
                     <div
-                        class="flex items-center gap-2 text-wrap absolute top-[-30px] left-2"
+                        class="absolute left-2 top-[-30px] flex items-center gap-2 text-wrap"
                     >
-                        <div class="bg-card p-2 rounded-lg">
+                        <div class="rounded-lg bg-card p-2">
                             <img
-                                class="w-10 h-auto rounded-md"
+                                class="h-auto w-10 rounded-md"
                                 src="/public/images/profile_pic_1.jpg"
                                 alt=""
                             />
@@ -34,8 +34,8 @@ import { Progress } from '~/components/ui/progress';
             </Tooltip>
         </TooltipProvider>
         <!-- <h2 class="text-lg font-bold">Room-Name</h2> -->
-        <div class="flex flex-col gap-2 mt-2">
-            <span class="text-muted-foreground text-sm">10 / 15 Users</span>
+        <div class="mt-2 flex flex-col gap-2">
+            <span class="text-sm text-muted-foreground">10 / 15 Users</span>
             <Progress :model-value="75" class="h-2" />
         </div>
     </div>

@@ -4,7 +4,7 @@
             <Tooltip>
                 <TooltipTrigger as-child>
                     <NuxtLink
-                        class="rounded-lg p-4 no-underline flex items-center gap-6 hover:bg-accent"
+                        class="flex items-center gap-6 rounded-lg p-4 no-underline hover:bg-accent"
                         :to="to"
                         :class="{
                             'bg-accent text-card-foreground-highlight':

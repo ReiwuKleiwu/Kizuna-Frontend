@@ -1,5 +1,5 @@
 <template>
-    <div class="flex gap-4 p-4 h-screen overflow-hidden">
+    <div class="flex h-screen gap-4 overflow-hidden p-4">
         <Sidebar />
         <slot />
     </div>

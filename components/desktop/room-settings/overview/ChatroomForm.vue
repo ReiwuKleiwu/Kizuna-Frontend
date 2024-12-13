@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import ChatroomLanguagePicker from '~/components/desktop/room-settings/overview/ChatroomLanguagePicker.vue';
+
 const roomTags = ref<string[]>([]);
 </script>
 
@@ -38,39 +40,7 @@ const roomTags = ref<string[]>([]);
             <Label class="text-xs font-semibold uppercase" for="room-language">
                 Chatroom Language
             </Label>
-            <Select id="room-language">
-                <SelectTrigger>
-                    <SelectValue placeholder="Choose a language" />
-                </SelectTrigger>
-                <SelectContent>
-                    <SelectGroup>
-                        <SelectItem value="german">
-                            <div class="flex gap-2">
-                                <CountryFlag country="germany" />
-                                <span>German</span>
-                            </div>
-                        </SelectItem>
-                        <SelectItem value="english">
-                            <div class="flex gap-2">
-                                <CountryFlag country="united-states" />
-                                <span>English</span>
-                            </div>
-                        </SelectItem>
-                        <SelectItem value="japanese">
-                            <div class="flex gap-2">
-                                <CountryFlag country="japan" />
-                                <span>Japanese</span>
-                            </div>
-                        </SelectItem>
-                        <SelectItem value="korean">
-                            <div class="flex gap-2">
-                                <CountryFlag country="south-korea" />
-                                <span>Korean</span>
-                            </div>
-                        </SelectItem>
-                    </SelectGroup>
-                </SelectContent>
-            </Select>
+            <ChatroomLanguagePicker />
         </div>
 
         <!-- Room Tags -->

@@ -1,7 +1,3 @@
-// List of supportes languages with IETF locales tags
-// See the following link for more:
-// https://support.elucidat.com/hc/en-us/articles/6068623875217-IETF-language-tags
-
 export const supportedLanguages = [
     'en-US',
     'en-GB',
@@ -11,6 +7,14 @@ export const supportedLanguages = [
     'ja-JP',
     'ko-KR',
     'hi-IN',
+    'zh-CN',
+    'zh-HK',
+    'zh-TW',
+    'nl-NL',
+    'fr-FR',
+    'pl-PL',
+    'pt-PT',
+    'pt-BR',
 ];
 
 export const supportedLanguagesDetails = new Map([
@@ -68,6 +72,62 @@ export const supportedLanguagesDetails = new Map([
         {
             label: 'Hindi',
             iconName: 'india',
+        },
+    ],
+    [
+        'zh-CN',
+        {
+            label: 'Chinese Simplified',
+            iconName: 'china',
+        },
+    ],
+    [
+        'zh-HK',
+        {
+            label: 'Chinese Traditional (HK)',
+            iconName: 'hong-kong-sar-china',
+        },
+    ],
+    [
+        'zh-TW',
+        {
+            label: 'Chinese Traditional (TW)',
+            iconName: 'taiwan',
+        },
+    ],
+    [
+        'nl-NL',
+        {
+            label: 'Dutch',
+            iconName: 'netherlands',
+        },
+    ],
+    [
+        'fr-FR',
+        {
+            label: 'French',
+            iconName: 'france',
+        },
+    ],
+    [
+        'pl-PL',
+        {
+            label: 'Polish',
+            iconName: 'poland',
+        },
+    ],
+    [
+        'pt-PT',
+        {
+            label: 'Portuguese (Portugal)',
+            iconName: 'portugal',
+        },
+    ],
+    [
+        'pt-BR',
+        {
+            label: 'Portuguese (Brazil)',
+            iconName: 'brazil',
         },
     ],
 ]);

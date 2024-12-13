@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    compatibilityDate: '2024-04-03',
     devtools: { enabled: true },
     ssr: false,
     components: [
@@ -33,7 +32,7 @@ export default defineNuxtConfig({
         componentDir: './components/ui',
     },
     i18n: {
-        defaultLocale: 'de',
+        defaultLocale: 'en',
         locales: [
             { code: 'de', language: 'de-DE', file: 'de.json' },
             { code: 'en', language: 'en-US', file: 'en.json' },

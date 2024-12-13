@@ -1,13 +1,15 @@
 <script setup lang="ts">
+import SettingsSpacer from '~/components/desktop/room-settings/SettingsSpacer.vue';
+
 const { t } = useI18n();
 
 const roomTags = ref<string[]>([]);
 </script>
 
 <template>
-    <div class="flex flex-col gap-4 p-4">
+    <div class="flex flex-1 flex-col gap-4 p-4">
         <!-- Room Name -->
-        <div class="flex w-64 flex-col gap-1">
+        <div class="flex w-full flex-col gap-2">
             <Label class="text-xs font-semibold uppercase" for="room-name">
                 {{ t('chatroom_settings.form.chatroom_name.label') }}
             </Label>
@@ -20,9 +22,9 @@ const roomTags = ref<string[]>([]);
                 "
             />
         </div>
-
+        <SettingsSpacer />
         <!-- Room Description -->
-        <div class="flex w-96 flex-col gap-1">
+        <div class="flex w-full flex-col gap-2">
             <Label
                 class="text-xs font-semibold uppercase"
                 for="room-description"
@@ -38,17 +40,17 @@ const roomTags = ref<string[]>([]);
                 "
             />
         </div>
-
+        <SettingsSpacer />
         <!-- Chatroom Language -->
-        <div class="flex flex-col gap-1">
+        <div class="flex w-full flex-col gap-2">
             <Label class="text-xs font-semibold uppercase" for="room-language">
                 {{ t('chatroom_settings.form.chatroom_language.label') }}
             </Label>
             <ChatroomLanguagePicker />
         </div>
-
+        <SettingsSpacer />
         <!-- Room Tags -->
-        <div class="w-96">
+        <div class="flex w-full flex-col gap-2">
             <Label class="text-xs font-semibold uppercase" for="room-tags">
                 {{ t('chatroom_settings.form.chatroom_tags.label') }}
             </Label>

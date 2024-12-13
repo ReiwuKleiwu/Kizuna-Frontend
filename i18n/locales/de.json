@@ -3,6 +3,9 @@
     "overview": {
       "heading": "Chatraum Übersicht"
     },
+    "chatroom_card": {
+      "label": "Chatraum Vorschau"
+    },
     "form": {
       "chatroom_name": {
         "label": "Chatraum Name",

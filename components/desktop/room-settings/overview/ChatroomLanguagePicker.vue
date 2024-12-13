@@ -18,7 +18,7 @@ const selectedLanguage = ref('');
                 variant="outline"
                 role="combobox"
                 :aria-expanded="open"
-                class="w-96 justify-between"
+                class="w-full justify-between"
             >
                 <div class="flex gap-2">
                     <!-- Display selected locales flag -->

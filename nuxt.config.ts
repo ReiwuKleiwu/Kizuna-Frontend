@@ -16,6 +16,7 @@ export default defineNuxtConfig({
         '@nuxt/icon',
         '@nuxt/eslint',
         '@pinia/nuxt',
+        '@nuxtjs/i18n',
     ],
     colorMode: {
         classSuffix: '',
@@ -30,5 +31,15 @@ export default defineNuxtConfig({
          * @default "./components/ui"
          */
         componentDir: './components/ui',
+    },
+    i18n: {
+        defaultLocale: 'de',
+        locales: [
+            { code: 'de', language: 'de-DE', file: 'de.json' },
+            { code: 'en', language: 'en-US', file: 'en.json' },
+            { code: 'jp', language: 'jp-JP', file: 'jp.json' },
+        ],
+        langDir: './locales',
+        vueI18n: './i18n.config.ts',
     },
 });

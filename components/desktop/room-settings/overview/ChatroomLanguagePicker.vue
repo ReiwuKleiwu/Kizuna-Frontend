@@ -5,6 +5,7 @@ import {
     supportedLanguages,
     supportedLanguagesDetails,
 } from '~/utils/languages';
+const { t } = useI18n();
 
 const open = ref(false);
 const selectedLanguage = ref('');
@@ -20,7 +21,7 @@ const selectedLanguage = ref('');
                 class="w-96 justify-between"
             >
                 <div class="flex gap-2">
-                    <!-- Display selected language flag -->
+                    <!-- Display selected locales flag -->
                     <CountryFlag
                         v-if="selectedLanguage"
                         :country="
@@ -28,14 +29,16 @@ const selectedLanguage = ref('');
                                 ?.iconName
                         "
                     />
-                    <!-- Display selected language label or placeholder -->
+                    <!-- Display selected locales label or placeholder -->
                     <span>
                         {{
                             selectedLanguage
                                 ? supportedLanguagesDetails.get(
                                       selectedLanguage,
                                   )?.label
-                                : 'Select language...'
+                                : t(
+                                      'chatroom_settings.language_picker.no_language_selected',
+                                  )
                         }}
                     </span>
                 </div>
@@ -49,21 +52,28 @@ const selectedLanguage = ref('');
             <Command>
                 <CommandInput
                     class="h-9"
-                    placeholder="Search language by name..."
+                    :placeholder="
+                        t(
+                            'chatroom_settings.language_picker.search_placeholder',
+                        )
+                    "
                 />
-                <CommandEmpty>No language found.</CommandEmpty>
+                <CommandEmpty>{{
+                    t('chatroom_settings.language_picker.no_language_found')
+                }}</CommandEmpty>
                 <CommandList>
                     <CommandGroup>
                         <CommandItem
                             v-for="language in supportedLanguages"
                             :key="language"
-                            :value="language"
-                            :data-search="
-                                supportedLanguagesDetails.get(language)?.label
-                            "
+                            :value="`${supportedLanguagesDetails.get(language)?.label || ''}_${language}`"
                             @select="
                                 (event) => {
-                                    selectedLanguage = event.detail.value;
+                                    selectedLanguage =
+                                        event.detail.value
+                                            ?.toString()
+                                            .split('_')[1] || 'en-EN';
+
                                     open = false;
                                 }
                             "

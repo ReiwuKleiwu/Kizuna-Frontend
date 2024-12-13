@@ -1,4 +1,4 @@
-// List of supportes languages with IETF language tags
+// List of supportes languages with IETF locales tags
 // See the following link for more:
 // https://support.elucidat.com/hc/en-us/articles/6068623875217-IETF-language-tags
 

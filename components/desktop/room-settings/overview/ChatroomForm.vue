@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ChatroomLanguagePicker from '~/components/desktop/room-settings/overview/ChatroomLanguagePicker.vue';
+const { t } = useI18n();
 
 const roomTags = ref<string[]>([]);
 </script>
@@ -9,13 +9,15 @@ const roomTags = ref<string[]>([]);
         <!-- Room Name -->
         <div class="flex w-64 flex-col gap-1">
             <Label class="text-xs font-semibold uppercase" for="room-name">
-                Chatroom Name
+                {{ t('chatroom_settings.form.chatroom_name.label') }}
             </Label>
             <Input
                 id="room-name"
                 class="rounded-sm"
                 type="text"
-                placeholder="Enter the name of the chatroom"
+                :placeholder="
+                    t('chatroom_settings.form.chatroom_name.placeholder')
+                "
             />
         </div>
 
@@ -25,20 +27,22 @@ const roomTags = ref<string[]>([]);
                 class="text-xs font-semibold uppercase"
                 for="room-description"
             >
-                Chatroom Description
+                {{ t('chatroom_settings.form.chatroom_description.label') }}
             </Label>
             <Textarea
                 id="room-description"
                 class="resize-none rounded-sm"
                 rows="7"
-                placeholder="Provide a brief description of the chatroom"
+                :placeholder="
+                    t('chatroom_settings.form.chatroom_description.placeholder')
+                "
             />
         </div>
 
         <!-- Chatroom Language -->
         <div class="flex flex-col gap-1">
             <Label class="text-xs font-semibold uppercase" for="room-language">
-                Chatroom Language
+                {{ t('chatroom_settings.form.chatroom_language.label') }}
             </Label>
             <ChatroomLanguagePicker />
         </div>
@@ -46,7 +50,7 @@ const roomTags = ref<string[]>([]);
         <!-- Room Tags -->
         <div class="w-96">
             <Label class="text-xs font-semibold uppercase" for="room-tags">
-                Chatroom Tags
+                {{ t('chatroom_settings.form.chatroom_tags.label') }}
             </Label>
             <TagsInput
                 id="room-tags"
@@ -58,7 +62,9 @@ const roomTags = ref<string[]>([]);
                     <TagsInputItemDelete />
                 </TagsInputItem>
                 <TagsInputInput
-                    placeholder="Add tags for the chatroom (e.g., tech, sports)"
+                    :placeholder="
+                        t('chatroom_settings.form.chatroom_tags.placeholder')
+                    "
                 />
             </TagsInput>
         </div>

@@ -1,0 +1,34 @@
+{
+  "chatroom_settings": {
+    "overview": {
+      "heading": "Chatraum Übersicht"
+    },
+    "form": {
+      "chatroom_name": {
+        "label": "Chatraum Name",
+        "placeholder": "Geben Sie den Namen des Chatraums ein"
+      },
+      "chatroom_description": {
+        "label": "Chatraum Beschreibung",
+        "placeholder": "Geben Sie eine kurze Beschreibung des Chatraums an"
+      },
+      "chatroom_language": {
+        "label": "Chatraum Sprache",
+        "placeholder": "Sprache auswählen..."
+      },
+      "chatroom_tags": {
+        "label": "Chatraum Tags",
+        "placeholder": "Tags für den Chatraum hinzufügen (z. B. Technik, Sport)"
+      }
+    },
+    "settings": {
+      "restrict_login_access": "Zugang nur für registrierte Benutzer einschränken",
+      "enable_nsfw_content": "NSFW-Inhalte in Chaträumen aktivieren"
+    },
+    "language_picker": {
+      "no_language_selected": "Sprache auswählen...",
+      "search_placeholder": "Sprache nach Namen suchen...",
+      "no_language_found": "Keine Sprache gefunden."
+    }
+  }
+}

@@ -2,12 +2,14 @@
 export default defineNuxtConfig({
     devtools: { enabled: true },
     ssr: false,
+
     components: [
         {
             path: '~/components',
             pathPrefix: false,
         },
     ],
+
     modules: [
         '@nuxtjs/tailwindcss',
         'shadcn-nuxt',
@@ -16,10 +18,13 @@ export default defineNuxtConfig({
         '@nuxt/eslint',
         '@pinia/nuxt',
         '@nuxtjs/i18n',
+        '@vee-validate/nuxt',
     ],
+
     colorMode: {
         classSuffix: '',
     },
+
     shadcn: {
         /**
          * Prefix for all the imported component
@@ -31,6 +36,7 @@ export default defineNuxtConfig({
          */
         componentDir: './components/ui',
     },
+
     i18n: {
         defaultLocale: 'en',
         locales: [
@@ -41,4 +47,6 @@ export default defineNuxtConfig({
         langDir: './locales',
         vueI18n: './i18n.config.ts',
     },
+
+    compatibilityDate: '2024-12-21',
 });

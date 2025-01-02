@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import SettingsSpacer from '~/components/desktop/room-settings/SettingsSpacer.vue';
-import SettingsChatroomCard from '~/components/desktop/room-settings/overview/SettingsChatroomCard.vue';
-
 const { t } = useI18n();
 </script>
 

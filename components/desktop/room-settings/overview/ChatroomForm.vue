@@ -11,13 +11,17 @@ const chatroomSchema = toTypedSchema(
         name: z.string().min(1).max(20),
         description: z.string().min(0).max(250),
         language: z.enum(supportedLanguages),
+        capacity: z.array(z.number().min(0).max(100)),
         tags: z.array(z.string().min(1).max(10)).min(0).max(5),
+        registered_users_only: z.boolean(),
+        nsfw_allowed: z.boolean(),
     }),
 );
 
 const { handleSubmit } = useForm({
     validationSchema: chatroomSchema,
     initialValues: {
+        capacity: [10],
         tags: [],
         language: supportedLanguages[0],
     },
@@ -113,6 +117,31 @@ const onSubmit = handleSubmit((values) => {
             <SettingsChatroomCard />
         </div>
         <SettingsSpacer />
+        <FormField v-slot="{ componentField, value }" name="capacity">
+            <FormItem>
+                <FormLabel class="text-xs font-semibold uppercase"
+                    >Chatroom Capacity</FormLabel
+                >
+                <FormControl>
+                    <Slider
+                        v-bind="componentField"
+                        :default-value="[10]"
+                        :max="100"
+                        :min="0"
+                        :step="1"
+                    />
+                    <FormDescription class="flex justify-between">
+                        <span
+                            >How many users should be able to join the
+                            room?</span
+                        >
+                        <span>{{ value?.[0] }} Users</span>
+                    </FormDescription>
+                </FormControl>
+                <FormMessage />
+            </FormItem>
+        </FormField>
+        <SettingsSpacer />
         <!-- Room Tags -->
         <FormField v-slot="{ value }" name="tags">
             <FormItem class="flex w-full flex-col gap-2">
@@ -148,7 +177,48 @@ const onSubmit = handleSubmit((values) => {
                 <FormMessage />
             </FormItem>
         </FormField>
-        <Button type="submit"> Submit </Button>
+        <SettingsSpacer />
+        <!-- Switches -->
+        <div class="flex flex-col gap-6 p-4">
+            <FormField
+                v-slot="{ value, handleChange }"
+                name="registered_users_only"
+            >
+                <FormItem class="flex flex-col">
+                    <div class="flex justify-between">
+                        <span class="font-semibold">{{
+                            t(
+                                'chatroom_settings.settings.restrict_login_access',
+                            )
+                        }}</span>
+                        <FormControl>
+                            <Switch
+                                :checked="value"
+                                @update:checked="handleChange"
+                            />
+                        </FormControl>
+                    </div>
+                    <FormMessage />
+                </FormItem>
+            </FormField>
+            <FormField v-slot="{ value, handleChange }" name="nsfw_allowed">
+                <FormItem class="flex flex-col">
+                    <div class="flex justify-between">
+                        <span class="font-semibold">{{
+                            t('chatroom_settings.settings.enable_nsfw_content')
+                        }}</span>
+                        <FormControl>
+                            <Switch
+                                :checked="value"
+                                @update:checked="handleChange"
+                            />
+                        </FormControl>
+                    </div>
+                    <FormMessage />
+                </FormItem>
+            </FormField>
+            <Button type="submit"> Submit </Button>
+        </div>
     </form>
 </template>
 

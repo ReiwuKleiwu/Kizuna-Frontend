@@ -15,7 +15,7 @@ export const supportedLanguages = [
     'pl-PL',
     'pt-PT',
     'pt-BR',
-];
+] as const;
 
 export const supportedLanguagesDetails = new Map([
     [

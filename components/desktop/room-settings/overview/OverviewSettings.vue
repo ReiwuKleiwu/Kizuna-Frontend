@@ -13,20 +13,7 @@ const { t } = useI18n();
             <h1 class="pl-4 text-2xl font-semibold">
                 {{ t('chatroom_settings.overview.heading') }}
             </h1>
-            <div class="flex">
-                <div class="flex-1">
-                    <div class="flex">
-                        <ChatroomForm />
-                    </div>
-                </div>
-                <div class="flex p-4">
-                    <SettingsChatroomCard />
-                </div>
-            </div>
-            <div class="px-4">
-                <SettingsSpacer />
-            </div>
-            <ChatroomSettings />
+            <ChatroomForm />
         </div>
     </div>
 </template>

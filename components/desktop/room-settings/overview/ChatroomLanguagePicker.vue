@@ -8,7 +8,9 @@ import {
 const { t } = useI18n();
 
 const open = ref(false);
-const selectedLanguage = ref('');
+const selectedLanguage = defineModel({
+    type: String,
+});
 </script>
 
 <template>
@@ -48,7 +50,7 @@ const selectedLanguage = ref('');
                 />
             </Button>
         </PopoverTrigger>
-        <PopoverContent class="w-96 p-0">
+        <PopoverContent class="flex-1 p-0">
             <Command>
                 <CommandInput
                     class="h-9"

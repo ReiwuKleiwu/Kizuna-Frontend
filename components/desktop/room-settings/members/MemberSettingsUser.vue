@@ -7,7 +7,7 @@
         <div class="flex flex-1 items-center gap-2">
             <img
                 class="h-auto w-10 rounded-md"
-                src="/public/images/profile_pic_1.jpg"
+                src="/images/profile_pic_1.jpg"
                 alt=""
             />
             <span>Username</span>

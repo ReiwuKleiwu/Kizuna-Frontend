@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { t } = useI18n();
+</script>
 
 <template>
     <div class="flex h-full flex-1 p-4">
@@ -6,7 +8,9 @@
             <div
                 class="col-span-1 col-start-2 flex h-full flex-col gap-4 overflow-y-hidden"
             >
-                <h1 class="text-2xl font-semibold">Members</h1>
+                <h1 class="text-2xl font-semibold">
+                    {{ t('chatroom_settings.members.heading') }}
+                </h1>
                 <div
                     class="flex flex-1 flex-col gap-4 overflow-y-auto overflow-x-hidden"
                 >

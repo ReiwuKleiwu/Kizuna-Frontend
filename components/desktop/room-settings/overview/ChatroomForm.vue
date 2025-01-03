@@ -44,7 +44,9 @@ const onSubmit = handleSubmit((values) => {
                             for="room-name"
                         >
                             {{
-                                t('chatroom_settings.form.chatroom_name.label')
+                                t(
+                                    'chatroom_settings.overview.chatroom_name.label',
+                                )
                             }}
                         </FormLabel>
                         <FormControl>
@@ -55,7 +57,7 @@ const onSubmit = handleSubmit((values) => {
                                 v-bind="componentField"
                                 :placeholder="
                                     t(
-                                        'chatroom_settings.form.chatroom_name.placeholder',
+                                        'chatroom_settings.overview.chatroom_name.placeholder',
                                     )
                                 "
                             />
@@ -73,7 +75,7 @@ const onSubmit = handleSubmit((values) => {
                         >
                             {{
                                 t(
-                                    'chatroom_settings.form.chatroom_description.label',
+                                    'chatroom_settings.overview.chatroom_description.label',
                                 )
                             }}
                         </FormLabel>
@@ -85,7 +87,7 @@ const onSubmit = handleSubmit((values) => {
                                 rows="7"
                                 :placeholder="
                                     t(
-                                        'chatroom_settings.form.chatroom_description.placeholder',
+                                        'chatroom_settings.overview.chatroom_description.placeholder',
                                     )
                                 "
                             />
@@ -103,7 +105,7 @@ const onSubmit = handleSubmit((values) => {
                         >
                             {{
                                 t(
-                                    'chatroom_settings.form.chatroom_language.label',
+                                    'chatroom_settings.overview.chatroom_language.label',
                                 )
                             }}
                         </FormLabel>
@@ -119,9 +121,11 @@ const onSubmit = handleSubmit((values) => {
         <SettingsSpacer />
         <FormField v-slot="{ componentField, value }" name="capacity">
             <FormItem>
-                <FormLabel class="text-xs font-semibold uppercase"
-                    >Chatroom Capacity</FormLabel
-                >
+                <FormLabel class="text-xs font-semibold uppercase">
+                    {{
+                        t('chatroom_settings.overview.chatroom_capacity.label')
+                    }}
+                </FormLabel>
                 <FormControl>
                     <Slider
                         v-bind="componentField"
@@ -131,11 +135,19 @@ const onSubmit = handleSubmit((values) => {
                         :step="1"
                     />
                     <FormDescription class="flex justify-between">
+                        <span>{{
+                            t(
+                                'chatroom_settings.overview.chatroom_capacity.description',
+                            )
+                        }}</span>
                         <span
-                            >How many users should be able to join the
-                            room?</span
+                            >{{ value?.[0] }}
+                            {{
+                                t(
+                                    'chatroom_settings.overview.chatroom_capacity.user_counter',
+                                )
+                            }}</span
                         >
-                        <span>{{ value?.[0] }} Users</span>
                     </FormDescription>
                 </FormControl>
                 <FormMessage />
@@ -149,7 +161,7 @@ const onSubmit = handleSubmit((values) => {
                     class="text-xs font-semibold uppercase"
                     for="room-tags"
                 >
-                    {{ t('chatroom_settings.form.chatroom_tags.label') }}
+                    {{ t('chatroom_settings.overview.chatroom_tags.label') }}
                 </FormLabel>
                 <FormControl>
                     <TagsInput
@@ -168,7 +180,7 @@ const onSubmit = handleSubmit((values) => {
                         <TagsInputInput
                             :placeholder="
                                 t(
-                                    'chatroom_settings.form.chatroom_tags.placeholder',
+                                    'chatroom_settings.overview.chatroom_tags.placeholder',
                                 )
                             "
                         />
@@ -179,7 +191,7 @@ const onSubmit = handleSubmit((values) => {
         </FormField>
         <SettingsSpacer />
         <!-- Switches -->
-        <div class="flex flex-col gap-6 p-4">
+        <div class="flex flex-col gap-6">
             <FormField
                 v-slot="{ value, handleChange }"
                 name="registered_users_only"
@@ -188,7 +200,7 @@ const onSubmit = handleSubmit((values) => {
                     <div class="flex justify-between">
                         <span class="font-semibold">{{
                             t(
-                                'chatroom_settings.settings.restrict_login_access',
+                                'chatroom_settings.overview.restrict_login_access',
                             )
                         }}</span>
                         <FormControl>
@@ -205,7 +217,7 @@ const onSubmit = handleSubmit((values) => {
                 <FormItem class="flex flex-col">
                     <div class="flex justify-between">
                         <span class="font-semibold">{{
-                            t('chatroom_settings.settings.enable_nsfw_content')
+                            t('chatroom_settings.overview.enable_nsfw_content')
                         }}</span>
                         <FormControl>
                             <Switch

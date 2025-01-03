@@ -56,12 +56,14 @@ const selectedLanguage = defineModel({
                     class="h-9"
                     :placeholder="
                         t(
-                            'chatroom_settings.language_picker.search_placeholder',
+                            'chatroom_settings.overview.language_picker.search_placeholder',
                         )
                     "
                 />
                 <CommandEmpty>{{
-                    t('chatroom_settings.language_picker.no_language_found')
+                    t(
+                        'chatroom_settings.overview.language_picker.no_language_found',
+                    )
                 }}</CommandEmpty>
                 <CommandList>
                     <CommandGroup>

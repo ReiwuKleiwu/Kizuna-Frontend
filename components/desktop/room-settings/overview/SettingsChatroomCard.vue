@@ -6,7 +6,7 @@ const { t } = useI18n();
     <!-- Label -->
     <div class="flex flex-col gap-2">
         <Label class="text-xs font-semibold uppercase" for="room-tags">
-            {{ t('chatroom_settings.chatroom_card.label') }}
+            {{ t('chatroom_settings.overview.chatroom_card.label') }}
         </Label>
         <!-- Chatroom card -->
         <div

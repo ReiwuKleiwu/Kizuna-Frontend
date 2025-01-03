@@ -1,9 +1,10 @@
 {
   "chatroom_settings": {
     "overview": {
-      "heading": "Chatroom Overview"
-    },
-    "form": {
+      "heading": "Chatroom Overview",
+      "chatroom_card": {
+        "label": "Chatroom Preview"
+      },
       "chatroom_name": {
         "label": "Chatroom Name",
         "placeholder": "Enter the name of the chatroom"
@@ -16,19 +17,25 @@
         "label": "Chatroom Language",
         "placeholder": "Select language..."
       },
+      "chatroom_capacity": {
+        "label": "Chatroom Capacity",
+        "description": "How many users should be able to join the room?\n",
+        "user_counter": "Users"
+      },
       "chatroom_tags": {
         "label": "Chatroom Tags",
         "placeholder": "Add tags for the chatroom (e.g., tech, sports)"
+      },
+      "restrict_login_access": "Restrict login access to registered users only",
+      "enable_nsfw_content": "Enable NSFW content in chatrooms",
+      "language_picker": {
+        "no_language_selected": "Select language...",
+        "search_placeholder": "Search language by name...",
+        "no_language_found": "No language found."
       }
     },
-    "settings": {
-      "restrict_login_access": "Restrict login access to registered users only",
-      "enable_nsfw_content": "Enable NSFW content in chatrooms"
-    },
-    "language_picker": {
-      "no_language_selected": "Select language...",
-      "search_placeholder": "Search language by name...",
-      "no_language_found": "No language found."
+    "members": {
+      "heading": "Members"
     }
   }
 }

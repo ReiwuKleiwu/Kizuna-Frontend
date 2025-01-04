@@ -33,7 +33,7 @@ const onSubmit = handleSubmit((values) => {
 </script>
 
 <template>
-    <form class="flex flex-1 flex-col gap-4 p-4" @submit="onSubmit">
+    <form class="relative flex flex-1 flex-col gap-4 p-4" @submit="onSubmit">
         <div class="flex gap-4">
             <div class="flex-1 flex-col gap-4">
                 <!-- Room Name -->

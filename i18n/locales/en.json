@@ -27,7 +27,7 @@
         "placeholder": "Add tags for the chatroom (e.g., tech, sports)"
       },
       "restrict_login_access": "Restrict login access to registered users only",
-      "enable_nsfw_content": "Enable NSFW content in chatrooms",
+      "enable_nsfw_content": "Enable NSFW content for the chatroom",
       "language_picker": {
         "no_language_selected": "Select language...",
         "search_placeholder": "Search language by name...",
@@ -35,7 +35,10 @@
       }
     },
     "members": {
-      "heading": "Members"
+      "heading": "Chatroom Members"
+    },
+    "bans": {
+      "heading": "Chatroom Ban List"
     }
   }
 }

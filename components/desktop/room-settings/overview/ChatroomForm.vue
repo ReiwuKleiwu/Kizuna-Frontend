@@ -53,7 +53,7 @@ const onSubmit = handleSubmit((values) => {
 </script>
 
 <template>
-    <div class="relative flex flex-1 flex-col gap-4 p-4">
+    <div class="relative flex flex-1 flex-col gap-4 p-4 text-primary">
         <form class="flex flex-col gap-4" @submit="onSubmit">
             <div class="flex gap-4">
                 <div class="flex-1 flex-col gap-4">
@@ -225,7 +225,7 @@ const onSubmit = handleSubmit((values) => {
                 >
                     <FormItem class="flex flex-col">
                         <div class="flex justify-between">
-                            <span class="font-semibold">{{
+                            <span class="font-medium">{{
                                 t(
                                     'chatroom_settings.overview.restrict_login_access',
                                 )
@@ -243,7 +243,7 @@ const onSubmit = handleSubmit((values) => {
                 <FormField v-slot="{ value, handleChange }" name="nsfw_allowed">
                     <FormItem class="flex flex-col">
                         <div class="flex justify-between">
-                            <span class="font-semibold">{{
+                            <span class="font-medium">{{
                                 t(
                                     'chatroom_settings.overview.enable_nsfw_content',
                                 )
@@ -265,7 +265,7 @@ const onSubmit = handleSubmit((values) => {
                 v-if="showSubmitPopover"
                 class="sticky bottom-0 flex w-full items-center justify-between rounded-md border border-border bg-background p-2"
             >
-                <span class="ml-2 font-semibold text-foreground"
+                <span class="ml-2 font-medium text-foreground"
                     >Do you want to save your changes?</span
                 >
                 <div class="flex gap-2">

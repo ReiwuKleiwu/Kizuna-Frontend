@@ -33,7 +33,7 @@
     >
         <OverviewSettings v-if="selectedTab === 'overview'" />
         <MemberSettings v-else-if="selectedTab === 'members'" />
-        <div v-else-if="selectedTab === 'bans'"></div>
+        <BansSettings v-else-if="selectedTab === 'bans'" />
     </div>
 </template>
 

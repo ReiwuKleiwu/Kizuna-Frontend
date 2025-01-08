@@ -11,7 +11,7 @@
             >
                 <img
                     src="/public/images/profile_pic_1.jpg"
-                    class="h-auto w-10 shrink-0 rounded-full"
+                    class="h-auto w-10 shrink-0 rounded-md"
                 />
                 <span class="grow">{{ user.username }}</span>
             </div>

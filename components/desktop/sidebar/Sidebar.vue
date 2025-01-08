@@ -40,9 +40,17 @@ const user = ref({
 });
 
 const navItems = [
-    { label: 'Explore Chats', icon: 'lucide:messages-square', to: '/explore' },
+    {
+        label: 'Explore Chatrooms',
+        icon: 'lucide:messages-square',
+        to: '/explore',
+    },
     // { label: 'Friends', icon: 'lucide:users-round', to: '/friends' },
-    { label: 'Active Chat', icon: 'lucide:message-square', to: '/chat' },
-    { label: 'Room Settings', icon: 'lucide:settings-2', to: '/settings' },
+    { label: 'Active Chatroom', icon: 'lucide:message-square', to: '/chat' },
+    {
+        label: 'Create Chatroom',
+        icon: 'lucide:square-plus',
+        to: '/create-chatroom',
+    },
 ];
 </script>
